@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="gallery-header">
+            <h1>Image Gallery</h1>
+            <p class="subtitle">Explore our beautiful collection</p>
+        </header>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="urban">Urban</button>
+            <button class="filter-btn" data-filter="people">People</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+
+        <!-- Image Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Mountain landscape">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Mountain Vista</h3>
+                        <p>Nature</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&h=400&fit=crop" alt="City skyline">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>City Lights</h3>
+                        <p>Urban</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="Forest path">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Forest Trail</h3>
+                        <p>Nature</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=400&fit=crop" alt="Portrait">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Natural Portrait</h3>
+                        <p>People</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&h=400&fit=crop" alt="Abstract art">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Color Splash</h3>
+                        <p>Abstract</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop" alt="Architecture">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Modern Architecture</h3>
+                        <p>Urban</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop" alt="Sunset">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Golden Hour</h3>
+                        <p>Nature</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Person smiling">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Genuine Smile</h3>
+                        <p>People</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Abstract patterns">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Geometric Dreams</h3>
+                        <p>Abstract</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&h=400&fit=crop" alt="Street view">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Urban Street</h3>
+                        <p>Urban</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&h=400&fit=crop" alt="Lake view">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Serene Lake</h3>
+                        <p>Nature</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1554034483-04fda0d3507b?w=600&h=400&fit=crop" alt="Abstract colors">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Color Wave</h3>
+                        <p>Abstract</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="closeBtn">&times;</button>
+        <button class="lightbox-nav prev" id="prevBtn">&#10094;</button>
+        <button class="lightbox-nav next" id="nextBtn">&#10095;</button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+        </div>
+        
+        <div class="lightbox-counter">
+            <span id="imageCounter"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
